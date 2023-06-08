@@ -110,7 +110,7 @@ async function dictionaryFn(){
         wikiUrl = data[0].sourceUrls;
         // link audio file to sound
 
-        if(data[0].phonetics[0]){
+        if(data[0].phonetics[0].audio){
             audioHolder.setAttribute("src", data[0].phonetics[1].audio) 
         }else{
             audioHolder.removeAttribute("src");
@@ -165,7 +165,7 @@ function darkMode(){
 
 // plays audio that is linked to the button
 function playAudio(){
-    if(audioHolder.src !== ""){
+    if(audioHolder.src){
         audioHolder.play();
     }
     
