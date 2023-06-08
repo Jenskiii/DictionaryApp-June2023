@@ -28,12 +28,12 @@ svg{
 }
 
 ::placeholder {
-  color: #2D2D2D;
+  color: #757575;
   opacity: .4; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
- color: #2D2D2D;
+ color: #757575;
  opacity: .4; /* Firefox */
 }
 
